@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginDto } from '../dto/login.interface';
+import { LoginDto } from '../dto/login.dto';
 import { LoginService } from '../services/login.service';
 
 @Component({
@@ -8,9 +8,9 @@ import { LoginService } from '../services/login.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  usuario: LoginDto;
+  usuario: any;
   constructor(private loginService: LoginService) {
-    this.usuario = new LoginDto(' ',' ');
+    this.usuario = new LoginDto('','');
   }
 
   ngOnInit(): void {
