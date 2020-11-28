@@ -1,3 +1,9 @@
 export class RequestSession {
-    constructor(public request_token: string) {}
+    token: string;
+    username: string;
+    email: string;
+    role:string;
+    photoUrl: string;
+    created: Date;
+    active: boolean;
 }
