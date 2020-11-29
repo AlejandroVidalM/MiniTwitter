@@ -4,11 +4,12 @@ import { Observable } from 'rxjs';
 import { Tweets } from '../dto/allTweet/Tweets.dto';
 
 const URL = 'https://www.minitwitter.com:3001/apiv1/tweets/all';
-
+var currentUser = JSON.parse(localStorage.getItem('currentUser'));
+var token = currentUser.token;
 const httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'application/json',
-      //'Authorization': 'Bearer ' + token
+      'Authorization': 'Bearer ' + token
     })
   };
 

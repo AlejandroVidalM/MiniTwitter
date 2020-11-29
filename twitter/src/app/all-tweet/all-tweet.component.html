@@ -1,1 +1,22 @@
-<p>all-tweet works!</p>
+<div *ngFor="let elementos of columnsToDisplay">
+    <div>
+        {{elementos}}
+    </div>
+    <div *ngFor="let tweet of tweets">
+        <div>
+            {{tweet.user.username}}
+        </div>
+        <div>
+            {{tweet.mensaje}}
+        </div>
+        <div>
+            {{tweet.likes.length}}
+        </div>
+        <div>
+            {{tweet.likes.length}}
+        </div>
+        <div>
+            <input type="button" (click)="darMeGusta(tweet.id)" value="Dar like" />
+        </div>
+    </div>
+</div>

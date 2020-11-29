@@ -19,6 +19,8 @@ export class RegisterComponent implements OnInit {
   doRegister(){
     this.registerService.registro(this.usuario).subscribe(respuesta =>{
       alert('Registro completado');
+      this.router.navigate(["/"]);
+
     });
   }
 

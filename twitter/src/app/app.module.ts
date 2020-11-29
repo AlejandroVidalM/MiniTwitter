@@ -12,6 +12,7 @@ import { LoginService } from './services/login.service';
 import { RegisterComponent } from './register/register.component';
 import { AllTweetComponent } from './all-tweet/all-tweet.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
