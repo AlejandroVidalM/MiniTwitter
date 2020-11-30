@@ -1,0 +1,10 @@
+<!-- <p>login works!</p> -->
+<div class="login">
+    <form class="custom-form" method="post">
+        <h1>Login</h1>
+        <input type="email" [(ngModel)]="usuario.email" name="email" placeholder="Email" required="required" />
+        <input type="password" [(ngModel)]="usuario.password" name="password" placeholder="Password" required="required" />
+        <input type="button" (click)="doLogin()" routerLink="/allTweet" value="Login" />
+    </form>
+    <input type="button" routerLink="/registro" value="Quiero registrarme" />
+</div>
